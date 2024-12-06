@@ -5,6 +5,7 @@ import { RiShoppingCart2Line, RiShoppingCartFill } from "react-icons/ri";
 import { BuscaComponent } from "components/Busca/Busca";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useState } from "react";
 
 const iconeProps = {
   color: "white",
@@ -15,6 +16,7 @@ export function NavBarComponent() {
   const location = useLocation();
   const categorias = useSelector((state) => state.categorias);
   const navigate = useNavigate();
+  const [selectedIndex, setSelectedIndex] = useState(null);
   return (
     <nav className={styles.nav}>
       <img
@@ -48,7 +50,13 @@ export function NavBarComponent() {
               }}
             >
               {/* <img src={categoria.thumbnail} alt={categoria.nome} /> */}
-              <h2>{categoria.nome}</h2>
+              <h2
+                key={categoria.id}
+                className={selectedIndex === index ? styles.selected : ""}
+                onClick={() => setSelectedIndex(index)}
+              >
+                {categoria.nome}
+              </h2>
             </div>
           ))}
         </div>

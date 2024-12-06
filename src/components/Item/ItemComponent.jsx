@@ -51,8 +51,8 @@ export function ItemComponent(props) {
           <p>{descricao}</p>
         </div>
         <div className={styles["item-info"]}>
-          <div className={styles["item-preco"]}>R$ {preco.toFixed(2)}</div>
-          <div className={styles["item-acoes"]}>
+          <div className={styles["item-preco"]}>Por apenas R$ {preco.toFixed(2)}</div>
+          {/* <div className={styles["item-acoes"]}>
             {favorito ? (
               <AiFillHeart
                 {...iconeProps}
@@ -104,7 +104,7 @@ export function ItemComponent(props) {
                 }}
               />
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
