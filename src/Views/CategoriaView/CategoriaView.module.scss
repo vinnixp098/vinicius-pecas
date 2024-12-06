@@ -1,0 +1,15 @@
+.itens{
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 50px;
+}
+
+.busca {
+    background: #000;
+    align-items: center;
+    display: flex;
+    grid-area: busca;
+    width: 100%;
+  }
