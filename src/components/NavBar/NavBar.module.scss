@@ -10,17 +10,14 @@
   position: fixed;
   width: 100vw;
   z-index: 1;
-  background: #aeaeae ;
+  background: #aeaeae;
+
   @media(max-width: $tablet) {
-    grid-template-areas:
-      'logo logo'
-      'links icones'
-      'busca busca';
-    grid-template-columns: 6fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     height: 200px;
     justify-items: center;
   }
+
   @media(max-width: $mobile-sm) {
     padding: 0 50px;
   }
@@ -36,19 +33,20 @@
   display: flex;
   justify-content: flex-start;
   gap: 20px;
+
   @media(max-width: $tablet) {
     justify-self: start;
   }
 }
 
 .link {
-  color:#ca600e ;
+  color: #ca600e;
   font-size: 22px;
   transition: 300ms;
 }
 
-.link:hover{
-  color:#ffffff ;
+.link:hover {
+  color: #ffffff;
   font-size: 22px;
 }
 
@@ -74,33 +72,55 @@
 .categorias {
   align-items: center;
   display: flex;
-  flex-direction: flex;
-  padding: 0 100px 0 10px;
+  gap: 20px;
   h1 {
     color: white;
     font-size: 20px;
-    padding-right: 30px;
+    text-align: center;
   }
+
+  @media(max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+  }
+
   &-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     width: 90%;
-    > div {
+
+    >div {
       align-items: center;
       cursor: pointer;
       display: flex;
       flex-direction: column;
+
       h2 {
         color: #041833;
         font-size: 15px;
+        text-align: center;
         // transition: 300ms;
       }
+
       .selected {
         color: #f27100;
         text-decoration: none;
       }
     }
+
+    @media (max-width: $tablet) {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+  }
+
+  @media(max-width: $mobile-sm) {
+    padding: 0 50px;
   }
 }
