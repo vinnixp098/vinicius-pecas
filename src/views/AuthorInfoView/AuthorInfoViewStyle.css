@@ -1,0 +1,42 @@
+.book {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .book .book-container {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    gap: 20px;
+  }
+  
+  .book-container .book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 20px 40px 20px 20px;
+  }
+  
+  .book-image img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    cursor: default;
+  }
+  
+  .books-sale {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .books-sale img {
+    width: 100px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+    cursor: pointer;
+  }
+  
