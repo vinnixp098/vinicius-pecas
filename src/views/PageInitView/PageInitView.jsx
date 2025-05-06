@@ -12,7 +12,7 @@ export function PageInitView() {
       <HeaderComponent />
       <div style={{
         // flex: 1,
-        height: "100vh",
+        // height: "100vh",
         display: "flex",
         flexDirection: "column",
         // overflow: "auto"

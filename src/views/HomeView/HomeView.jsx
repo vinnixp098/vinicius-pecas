@@ -23,21 +23,6 @@ export function HomeView() {
             <div className="book-information">
               <div className="book-title">{book.title}</div>
               <div className="book-price"> Por Apenas R$ {formatarPreco(book.price)}</div>
-              {/* <div className="book-assessment">
-                {" "}
-                Avaliação
-                <div>
-                  <FontAwesomeIcon icon={faStar} size="1x" color="gold" />{" "}
-                  <FontAwesomeIcon icon={faStar} size="1x" color="gold" />{" "}
-                  <FontAwesomeIcon icon={faStar} size="1x" color="gold" />{" "}
-                  <FontAwesomeIcon icon={faStar} size="1x" color="gold" />
-                  <FontAwesomeIcon
-                    icon={faStarHalfAlt}
-                    size="1x"
-                    color="gold"
-                  />
-                </div>
-              </div> */}
             </div>
           </div>
         ))}

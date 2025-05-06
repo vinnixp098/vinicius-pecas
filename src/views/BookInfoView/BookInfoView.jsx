@@ -10,16 +10,23 @@ export function BookInfoView() {
     <div className="book">
       <div className="book-container">
         <div className="book-image">
-          <img src={book?.image} alt={book?.title} title={book?.title}/>
+          <img src={book?.image} />
         </div>
         <div className="book-info">
           <h3>{book?.title}</h3>
           <div className="book-price">
-           Por apenas R$ {formatarPreco(book?.price)}
+            Por apenas R$ {formatarPreco(book?.price)}
           </div>
-          <div className="book-sinopse">
+          <div className="book-sale">
+            <h4>Descrição</h4>
+            
+              <p>{book.description}</p>
+            
+          </div>
+
+          <div className="book-sale">
             <h4>Falar com vendedor</h4>
-            <div className="books-sale">
+            
               <a
                 href={book.buyLinks.whatsapp.link}
                 target="_blank"
@@ -27,12 +34,9 @@ export function BookInfoView() {
               >
                 <img src={book.buyLinks.whatsapp.icon} alt="Amazon" />
               </a>
-            </div>
+            
           </div>
-          <div className="book-sinopse">
-            <h3>Descrição</h3>
-            {book?.description}
-          </div>
+          
         </div>
       </div>
     </div>

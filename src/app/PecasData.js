@@ -15,9 +15,9 @@ export const PecasData = [
   {
     id: 2,
     title: "Filtro de Ar Esportivo Inflow Inbox",
-    description: "Filtro de ar esportivo lavável e reutilizável, melhora a performance do motor e proporciona economia de combustível.",
+    description: "Melhore a eficiência do seu veículo com os filtros INflow. Feito especialmente de poliuretano, um material filtrante já consagrado em mercados como o europeu, americano e asiático, os filtros INflow aperfeiçoam a entrada de ar no motor, proporcionando uma melhor combustão e, consequentemente, diminuindo o consumo de combustível.",
     price: 149.90,
-    image: "https://http2.mlstatic.com/D_NQ_NP_2X_683414-MLB47965617533_102021-F.webp",
+    image: "https://http2.mlstatic.com/D_NQ_NP_947029-MLB80885894095_112024-O-filtro-ar-cilindrico-cnico-inflow-4-pol-180-mm-altura.webp",
     buyLinks: {
       whatsapp: {
         link: "https://api.whatsapp.com/send?phone=98986039076&text=Quero informações sobre Filtro de Ar Esportivo Inflow Inbox",
