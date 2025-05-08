@@ -7,12 +7,30 @@ export function HeaderComponent() {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const isDesktop = window.innerWidth >= 895;
+
   return (
     <div className="header">
       <div className="logo" onClick={() => navigate("/")}>
         <img src={logo} alt="Logo" />
         Vinícius Peças
       </div>
+
+      {isDesktop && (
+        <nav className="desktop-nav">
+          <ul>
+            <li>
+              <a href="/">Início</a>
+            </li>
+            {/* <li>
+              <a href="/authors">Autores</a>
+            </li>
+            <li>
+              <a href="/genres">Gêneros</a>
+            </li> */}
+          </ul>
+        </nav>
+      )}
 
       <button
         className="menu-toggle"
@@ -30,10 +48,10 @@ export function HeaderComponent() {
             <a href="/">Início</a>
           </li>
           {/* <li>
-            <a href="/">Gêneros</a>
-          </li> */}
-          {/* <li>
             <a href="/authors">Autores</a>
+          </li>
+          <li>
+            <a href="/genres">Gêneros</a>
           </li> */}
         </ul>
       </div>

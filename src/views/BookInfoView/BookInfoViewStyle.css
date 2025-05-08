@@ -54,12 +54,12 @@ img {
   font-weight: 500;
   gap: 10px;
 }
-.books-sale img {
-  width: 100px;
-  height: auto;
-  object-fit: contain;
-  cursor: pointer;
+.book-image img {
+  width: 300px; /* Tamanho desejado */
+  height: 400px; /* Tamanho desejado */
+  object-fit: cover; /* Mantém a proporção e preenche o container */
 }
+
 
 @media (min-width: 308px) and (max-width: 1024px) {
   .book {
@@ -97,9 +97,9 @@ img {
   }
 
   .book-image img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+    width: 300px; /* Tamanho desejado */
+    height: 400px; /* Tamanho desejado */
+    object-fit: cover; /* Mantém a proporção e preenche o container */
   }
 
 
@@ -131,10 +131,5 @@ img {
     font-weight: 800;
     gap: 10px;
   }
-  /* .books-sale img {
-    width: 100px;
-    height: auto;
-    object-fit: contain;
 
-  } */
 }

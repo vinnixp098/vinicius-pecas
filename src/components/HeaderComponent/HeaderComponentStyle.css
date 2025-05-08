@@ -13,6 +13,7 @@
   gap: 20px;
   color: #fff;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .logo img {
@@ -82,8 +83,28 @@
   cursor: pointer;
 }
 
+.desktop-nav ul{
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.desktop-nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 /* Responsivo: botão só aparece no mobile */
 @media (min-width: 300px) and (max-width: 894px) {
+  .desktop-nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
 
   .header {
     display: flex;
@@ -93,7 +114,7 @@
     padding: 40px 40px;
     position: relative;
   }
-  
+
   .logo {
     display: flex;
     align-items: center;
@@ -104,12 +125,11 @@
     cursor: pointer;
   }
 
-  
   .logo img {
     width: 40px;
     height: 40px;
   }
-  
+
   /* Botão hamburguer */
   .menu-toggle {
     display: none;
@@ -119,7 +139,7 @@
     color: white;
     cursor: pointer;
   }
-  
+
   /* Drawer lateral */
   .side-drawer {
     position: fixed;
@@ -136,14 +156,14 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .side-drawer.open {
     right: 0;
     /* background: red; */
     display: flex;
     justify-content: start;
   }
-  
+
   .side-drawer ul {
     list-style: none;
     padding: 0;
@@ -151,22 +171,22 @@
     text-align: center;
     width: 100%;
   }
-  
+
   .side-drawer ul li {
     margin-bottom: 20px;
   }
-  
+
   .side-drawer ul li a {
     color: white;
     text-decoration: none;
     font-size: 32px;
     font-weight: bold;
   }
-  
+
   .side-drawer ul li a:hover {
     color: orange;
   }
-  
+
   .close-drawer {
     margin-top: 20px;
     margin-right: 20px;
@@ -177,7 +197,6 @@
     color: white;
     cursor: pointer;
   }
-
 
   .menu-toggle {
     display: block;

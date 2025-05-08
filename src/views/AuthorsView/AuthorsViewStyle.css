@@ -14,10 +14,34 @@
 }
 
 .authors {
+  max-height:70%;
+  overflow-y: scroll; /* Mantém a rolagem */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE e Edge */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   /* padding: 20px; */
+}
+
+
+
+.authors::-webkit-scrollbar {
+  width: 8px;
+  display: none;
+}
+
+.authors::-webkit-scrollbar-thumb {
+  background-color: #032775; 
+  border-radius: 10px;
+}
+
+.authors::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3;
+}
+
+.authors::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
 }
 
 .author-item {

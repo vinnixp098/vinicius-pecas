@@ -1,25 +1,16 @@
 import { Outlet } from "react-router-dom";
 import { HeaderComponent } from "../../components/HeaderComponent/HeaderComponent";
 import { FooterComponent } from "../../components/FooterComponent/FooterComponent";
+import "./PageInitView.css"; 
 
 export function PageInitView() {
   return (
-    <div style={{
-      display: "flex",
-      flexDirection: "column",
-      // height: "100vh"
-    }}>
+    <div className="container">
       <HeaderComponent />
-      <div style={{
-        // flex: 1,
-        // height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        // overflow: "auto"
-      }}>
+      <div className="outlet">
         <Outlet />
       </div>
-      <FooterComponent />
+      {/* <FooterComponent /> */}
     </div>
   );
 }
