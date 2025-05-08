@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 import "./HomeViewStyle.css";
 import { PecasData } from "../../app/PecasData";
 import { useNavigate } from "react-router-dom";

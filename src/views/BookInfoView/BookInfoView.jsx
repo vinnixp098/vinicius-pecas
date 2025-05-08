@@ -10,7 +10,7 @@ export function BookInfoView() {
     <div className="book">
       <div className="book-container">
         <div className="book-image">
-          <img src={book?.image} />
+          <img src={book?.image} alt="img"/>
         </div>
         <div className="book-info">
           <h3>{book?.title}</h3>
