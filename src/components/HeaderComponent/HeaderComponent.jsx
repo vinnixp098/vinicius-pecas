@@ -20,7 +20,7 @@ export function HeaderComponent() {
         <nav className="desktop-nav">
           <ul>
             <li>
-              <a
+              <a href="#"
                 onClick={() => {
                   navigate("/");
                 }}

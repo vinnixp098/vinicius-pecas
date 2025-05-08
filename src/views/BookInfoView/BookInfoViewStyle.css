@@ -19,20 +19,18 @@
 }
 
 .book-image {
-  width: 100%;
+  width: 100% !important;
   display: flex;
+  /* background: #000; */
   justify-content: center;
   align-items: center;
 }
 
 .book-image img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-img {
-  max-width: 100px;
+  width: auto  !important;
+  height: auto  !important;
+  object-fit: contain; 
+  /* background-color: red; */
 }
 
 .book-sale {

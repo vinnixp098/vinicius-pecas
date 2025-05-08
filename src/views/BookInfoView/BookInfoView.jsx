@@ -10,10 +10,7 @@ export function BookInfoView() {
     <div className="book">
       <div className="book-container">
         <div className="book-image">
-          <img src={book?.image} alt="img" style={{
-            // height: 200,
-            // width: 100
-          }}/>
+          <img src={book?.image} alt="img" />
         </div>
         <div className="book-info">
           <h3>{book?.title}</h3>
@@ -27,7 +24,6 @@ export function BookInfoView() {
           </div>
 
           <div className="book-sale" href="">
-
             <a
               href={book.buyLinks.whatsapp.link}
               target="_blank"
