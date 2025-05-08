@@ -7,7 +7,7 @@ export function HomeView() {
   const navigate = useNavigate();
   return (
     <div className="main">
-      <h1>Recomendados</h1>
+      <h3>Recomendados</h3>
       <div className="books">
         {PecasData.map((book) => (
           <div

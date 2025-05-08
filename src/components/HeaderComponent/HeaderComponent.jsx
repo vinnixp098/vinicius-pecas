@@ -7,7 +7,7 @@ export function HeaderComponent() {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const isDesktop = window.innerWidth >= 895;
+  const isDesktop = window.innerWidth >= 1005;
 
   return (
     <div className="header">
@@ -20,7 +20,13 @@ export function HeaderComponent() {
         <nav className="desktop-nav">
           <ul>
             <li>
-              <a href="/">Início</a>
+              <a
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                Início
+              </a>
             </li>
             {/* <li>
               <a href="/authors">Autores</a>
@@ -45,7 +51,14 @@ export function HeaderComponent() {
         </button>
         <ul>
           <li>
-            <a href="/">Início</a>
+            <a
+              onClick={() => {
+                navigate("/");
+                setMenuOpen(false)
+              }}
+            >
+              Início
+            </a>
           </li>
           {/* <li>
             <a href="/authors">Autores</a>

@@ -9,19 +9,16 @@
 .main-authors h1 {
   font-size: 24px;
   font-weight: bold;
-  /* margin-left: 20px; */
-  /* background: #000; */
 }
 
 .authors {
   max-height:70%;
-  overflow-y: scroll; /* Mantém a rolagem */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE e Edge */
+  overflow-y: scroll;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  /* padding: 20px; */
 }
 
 
