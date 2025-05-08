@@ -20,7 +20,7 @@ export function HeaderComponent() {
         <nav className="desktop-nav">
           <ul>
             <li>
-              <a href="#">Início</a>
+              <a href="/">Início</a>
             </li>
             {/* <li>
               <a href="/authors">Autores</a>
@@ -45,7 +45,7 @@ export function HeaderComponent() {
         </button>
         <ul>
           <li>
-            <a href="#">Início</a>
+            <a href="/">Início</a>
           </li>
           {/* <li>
             <a href="/authors">Autores</a>
