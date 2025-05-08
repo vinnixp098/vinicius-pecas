@@ -83,7 +83,7 @@
 }
 
 /* Responsivo: botão só aparece no mobile */
-@media (max-width: 824px) {
+@media (min-width: 300px) and (max-width: 894px) {
 
   .header {
     display: flex;
